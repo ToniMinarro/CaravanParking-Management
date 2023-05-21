@@ -1,19 +1,17 @@
 {
-  "name": "codelytv/php-ddd-example",
+  "name": "toni/caravan-parking-management",
   "license": "MIT",
   "type": "project",
-  "description": "An example project applying Domain-Driven Design, Hexagonal Architecture and CQRS in a Monorepository",
+  "description": "Simple application to manage IN/OUT in a caravans parking area ",
   "require": {
-    "php": "^8.1",
+    "php": "^8.2",
 
-    "ext-amqp": "*",
     "ext-apcu": "*",
     "ext-json": "*",
     "ext-zend-opcache": "*",
     "ext-pdo": "*",
 
     "symfony/framework-bundle": "^6",
-    "symfony/messenger": "^6",
     "symfony/dotenv": "^6",
     "symfony/yaml": "^6",
     "symfony/twig-bundle": "^6",
@@ -30,8 +28,6 @@
     "ocramius/proxy-manager": "^2",
     "laminas/laminas-zendframework-bridge": "^1",
 
-    "elasticsearch/elasticsearch": "^7",
-    "monolog/monolog": "^3",
 
     "endclothing/prometheus_client_php": "^1"
   },
@@ -40,7 +36,6 @@
 
     "roave/security-advisories": "dev-master",
 
-    "behat/behat": "^3",
     "friends-of-behat/mink-extension": "^2",
     "friends-of-behat/symfony-extension": "^2",
     "behat/mink-browserkit-driver": "^2",
@@ -56,18 +51,15 @@
   },
   "autoload": {
     "psr-4": {
-      "CodelyTv\\Apps\\Mooc\\Backend\\": "apps/mooc/backend/src",
-      "CodelyTv\\Apps\\Mooc\\Frontend\\": "apps/mooc/frontend/src",
+      "Toni\\Apps\\CaravanManagement\\Backend\\": "apps/caravanManagement/backend/src",
+      "Toni\\Apps\\CaravanManagement\\Frontend\\": "apps/caravanManagement/frontend/src",
 
-      "CodelyTv\\Apps\\Backoffice\\Backend\\": "apps/backoffice/backend/src",
-      "CodelyTv\\Apps\\Backoffice\\Frontend\\": "apps/backoffice/frontend/src",
-
-      "CodelyTv\\": ["src"]
+      "Toni\\": ["src"]
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "CodelyTv\\Tests\\": ["tests"]
+      "Toni\\Tests\\": ["tests"]
     }
   },
   "minimum-stability": "RC",
